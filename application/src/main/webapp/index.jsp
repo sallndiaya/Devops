@@ -11,8 +11,8 @@
 <body>
 	<jsp:include page="nav.jsp"></jsp:include>
 	<div class="container mt-5 ml-auto">
-   		<h2 class="bg-primary p-3 text-white text-left">Bienvenue sur 
-   			notre application de gestion</h2>
+   		<h2 class="bg-primary p-3 text-white 
+   			text-left text-center">Module de gestion de dependences</h2>
    	</div>
 </body>
 </html>

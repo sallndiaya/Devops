@@ -4,8 +4,9 @@
 		<ul class="navbar-nav">
 			<li class="nav-item active"><a class="nav-link" href="/bugget">Bugget</a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="form.jsp">S'inscrire</a></li>
-			<li class="nav-item"><a class="nav-link" href="connexion.jsp">Se connecter</a></li>
+			<li class="nav-item"><a class="nav-link" href="formDepense.jsp">Creer une depense</a></li>
+			<li class="nav-item"><a class="nav-link" href="listDepense.jsp">Depenses</a></li>
+			<li class="nav-item"><a class="nav-link" href="budget.jsp">Budget</a></li>
 		</ul>
 </nav>
 <br>
