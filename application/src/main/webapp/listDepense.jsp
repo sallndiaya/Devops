@@ -58,7 +58,7 @@
 							<td><%= depense.getMontant() %> FCFA </td>
 							<td>
 			                  <a 
-			                  href="formDepense?id=<%= depense.getId() %>" 
+			                  href="editDepense.jsp?id=<%= depense.getId() %>" 
 			                  class="edit-btn  btn-sm btn btn-info">Modifier</a>
 			         		</td>
 						</tr>
@@ -72,8 +72,6 @@
 				<tr>
             		<th colspan="4">Total</th>
             		<th><%= somme  %> FCFA</th>
-            		
-            	
             	</tr>
           </tfoot>
 			</table>

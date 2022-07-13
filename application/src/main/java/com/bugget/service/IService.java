@@ -11,4 +11,5 @@ public interface IService {
 	User authenticate(User user);
 	boolean creerDepense(Depense depense);
 	List<Depense> listerDepenses();
+	Depense retrouverDemande (int id);
 }

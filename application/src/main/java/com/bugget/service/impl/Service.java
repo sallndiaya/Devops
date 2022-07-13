@@ -55,5 +55,10 @@ public class Service implements IService {
 		return depenses;	
 	}
 
+	@Override
+	public Depense retrouverDemande(int id) {
+		return (Depense) dao.find(Depense.class, "id="+ id);
+	}
+
 	
 }
