@@ -10,6 +10,7 @@ public interface IDao {
 	public Object find(Object entityClass, Integer primaryKey)  ;
 	public List<Object> list(Object entityClass) ;
 	public List<Object> list(Class<?> entityClass, String whereClause)  ;
+	
 	public void update(Object entity) ;
 	public Object find(Class<?> entityClass, String whereClause)  ;
 	public Object validateCredential(String login, String password) ;

@@ -45,8 +45,7 @@ public class HibernateDao implements IDao  {
 	 /* (non-Javadoc)
      *see com.app.sms.dao.IDao#delete(java.lang.Object)
      */
-    @SuppressWarnings("deprecation")
-	@Override
+    @Override
     public void delete(Object entity) {
         try {
             session = HibernateSession.getSession();
@@ -71,8 +70,7 @@ public class HibernateDao implements IDao  {
         try {
             session = HibernateSession.getSession();
                
-            @SuppressWarnings("deprecation")
-			Query query = session.createQuery("From " + entityClass.getName() + " " + whereClause);
+            Query<?> query = session.createQuery("From " + entityClass.getName() + " " + whereClause);
             entity = query.getSingleResult();
            
         } catch (Exception ignored) {}
@@ -86,8 +84,7 @@ public class HibernateDao implements IDao  {
         try {
             session = HibernateSession.getSession();
                
-            @SuppressWarnings("deprecation")
-			Query query = session.createQuery("From " + entityClass.getName() + " " + whereClause);
+            Query<Object> query = session.createQuery("From " + entityClass.getName() + " " + whereClause);
             entities = query.getResultList();
            
         } catch (Exception exception) {
@@ -103,7 +100,6 @@ public class HibernateDao implements IDao  {
 /* (non-Javadoc)
      *see com.app.sms.dao.IDao#update(java.lang.Object)
      */
-    @SuppressWarnings("deprecation")
 	@Override
     public void update(Object entity) {
         try {
@@ -129,10 +125,22 @@ public class HibernateDao implements IDao  {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Object> list(Object entityClass) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Object> entities = null;
+		try {
+			session = HibernateSession.getSession();
+		
+			
+			Query<?> query = session.createQuery("From " + entityClass.getClass().getSimpleName());
+			entities = (List<Object>) query.getResultList();
+			if (entities != null) logger.info("Records Successfully read.");
+			else logger.info("Records not found.");
+		} catch (Exception e) {
+			//throw new DAOException("ERROR:" + e.getClass() + ":" + e.getMessage());
+		}
+		return entities;
 	}
 
 	@Override

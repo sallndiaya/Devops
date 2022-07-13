@@ -1,3 +1,4 @@
+<%@page import="com.bugget.entities.Depense"%>
 <%@page import="com.bugget.entities.User"%>
 <%@page import="com.bugget.service.impl.Service"%>
 <%@page import="java.sql.Statement"%>
@@ -14,18 +15,17 @@
 </head>
 <body>
   <%
-  String nom = request.getParameter("nom");
-  String prenom = request.getParameter("prenom");
-  String email = request.getParameter("email");
-  String password = request.getParameter("password");
-  User user = new User(nom , prenom , email , password);
-  Service.getCurrentInstance().creerCompte(user);
+  String description = request.getParameter("description");
+  String categorie = request.getParameter("categorie");
+  Double montant  = Double.valueOf(request.getParameter("montant"));
+  Depense depense = new Depense(categorie, montant , description);
+  Service.getCurrentInstance().creerDepense(depense);
   %>
   <div class="d-flex  justify-content-around">
-  <div class="alert alert-success ml-auto w-50 mt-5">
-     <strong class="text-center ">Vous etes inscrit avec success</strong> 
+  <div class="alert alert-success">
+     <strong class="text-center ">Votre depense a été creée avec success</strong> 
   </div>
-  <a class="btn btn-info" href="connexion.jsp">Se connecter</a>
+  <a class="btn btn-info" href="./listDepense.jsp">Lister</a>
   </div>
 </body>
 </html>

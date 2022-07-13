@@ -26,5 +26,9 @@ public class Depense {
 		this.montant = montant;
 		this.description = description;
 	}
+	
+	public Depense() {
+		// TODO Auto-generated constructor stub
+	}
 
 }

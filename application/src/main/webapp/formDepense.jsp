@@ -10,7 +10,7 @@
 	<jsp:include page="nav.jsp"></jsp:include>
 	<div class="container mt-5 mb-5">
 		<div class="card mr-auto">
-			<form action="saveUser.jsp" method="post">
+			<form action="saveDepense.jsp" method="post">
 				<div class="card-header bg-primary">
 					<h2 class="card-title text-center text-white">Creation d'une
 						depense</h2>
