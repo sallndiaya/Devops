@@ -35,17 +35,17 @@
 		</dependency>
 	</dependencies>
 	<distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>test1</name>
-            <url>http://localhost:8081/artifactory/myrepo</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>test1</name>
-            <url>http://localhost:8081/artifactory/myrepo</url>
-        </snapshotRepository>
-    </distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>DESKTOP-7ED199M-releases</name>
+			<url>http://localhost:8081/artifactory/myrepo</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>DESKTOP-7ED199M-snapshots</name>
+			<url>http://localhost:8081/artifactory/myrepo</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<plugins>

@@ -38,12 +38,12 @@
         <repository>
             <id>central</id>
             <name>test1</name>
-            <url>http://localhost:808/artifactory/myrepo</url>
+            <url>http://localhost:8081/artifactory/myrepo</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>test1</name>
-            <url>http://localhost:8082/artifactory/myrepo</url>
+            <url>http://localhost:8081/artifactory/myrepo</url>
         </snapshotRepository>
     </distributionManagement>
 
