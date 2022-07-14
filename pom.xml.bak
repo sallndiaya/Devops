@@ -34,6 +34,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>test1</name>
+            <url>http://localhost:808/artifactory/myrepo</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>test1</name>
+            <url>http://localhost:8082/artifactory/myrepo</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<build>
 		<plugins>
