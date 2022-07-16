@@ -37,13 +37,13 @@
 	<distributionManagement>
 		<repository>
 			<id>central</id>
-			<name>DESKTOP-7ED199M-releases</name>
-			<url>http://localhost:8081/artifactory/myrepo</url>
+			<name>libs-release-local</name>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>DESKTOP-7ED199M-snapshots</name>
-			<url>http://localhost:8081/artifactory/myrepo</url>
+			<name>libs-snapshot-local</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
