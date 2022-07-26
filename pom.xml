@@ -34,7 +34,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<!--<distributionManagement>
+	<distributionManagement>
 		<repository>
 			<id>central</id>
 			<name>DESKTOP-7ED199M-releases</name>
@@ -45,7 +45,7 @@
 			<name>DESKTOP-7ED199M-snapshots</name>
 			<url>http://localhost:8081/artifactory/myrepo</url>
 		</snapshotRepository>
-	</distributionManagement>-->
+	</distributionManagement>
 
 	<build>
 		<plugins>
