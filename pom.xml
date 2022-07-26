@@ -38,12 +38,12 @@
 		<repository>
 			<id>central</id>
 			<name>DESKTOP-9J44CCS-releases</name>
-			<url>http://localhost:8082/artifactory/Devops</url>
+			<url>http://localhost:8082/artifactory/DevOpsProjet</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>DESKTOP-9J44CCS-snapshots</name>
-			<url>http://localhost:8082/artifactory/Devops</url>
+			<url>http://localhost:8082/artifactory/DevOpsProjet</url>
 		</snapshotRepository>
 	</distributionManagement>
 
