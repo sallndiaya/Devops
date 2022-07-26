@@ -34,7 +34,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<--<distributionManagement>
+	<distributionManagement>
 		<repository>
 			<id>central</id>
 			<name>DESKTOP-9J44CCS-releases</name>
