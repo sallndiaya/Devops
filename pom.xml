@@ -20,17 +20,17 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>t1</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<artifactId>t1</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
+			<artifactId>t1</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -38,12 +38,12 @@
 		<repository>
 			<id>central</id>
 			<name>DESKTOP-7ED199M-releases</name>
-			<url>http://localhost:8081/artifactory/myrepo</url>
+			<url>http://localhost:8082/artifactory/myrepo</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>DESKTOP-7ED199M-snapshots</name>
-			<url>http://localhost:8081/artifactory/myrepo</url>
+			<url>http://localhost:8082/artifactory/myrepo</url>
 		</snapshotRepository>
 	</distributionManagement>-->
 
@@ -51,7 +51,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<artifactId>t1</artifactId>
 			</plugin>
 			 <!--<plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
