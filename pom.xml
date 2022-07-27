@@ -33,19 +33,38 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!--dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.3.0</version>
+		</dependency>-->
 	</dependencies>
-	<distributionManagement>
+	<!--distributionManagement>
 		<repository>
 			<id>central</id>
-			<name>DESKTOP-9J44CCS-releases</name>
-			<url>http://localhost:8082/artifactory/myrepo</url>
+			<name>DESKTOP-9J44CCS-snapshots</name>
+			<url>http://localhost:8082/artifactory/myrepo/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>DESKTOP-9J44CCS-snapshots</name>
-			<url>http://localhost:8082/artifactory/myrepo</url>
+			<url>http://localhost:8082/artifactory/myrepo/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement>-->
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DESKTOP-9J44CCS-releases</name>
+        <url>http://localhost:8081/artifactory/myrepo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>DESKTOP-9J44CCS-snapshots</name>
+        <url>http://localhost:8081/artifactory/myrepo</url>
+    </snapshotRepository>
+</distributionManagement>
+	
 
 	<build>
 		<plugins>
@@ -53,7 +72,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			 <<plugin>
+			 <!--<plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <version>2.2</version>
@@ -62,10 +81,10 @@
                         <url>http://localhost:8085/manager/text</url>
                         <server>TomcatServer</server>
                         <username>admin</username>
-                        <password>passer@123**</password>
+                        <password>tomcatesmt</password>
                         <path>/demo</path>
                     </configuration>
-                </plugin>
+                </plugin>-->
 		</plugins>
 	</build>
 
