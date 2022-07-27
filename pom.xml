@@ -63,6 +63,11 @@
         <name>DESKTOP-9J44CCS-snapshots</name>
         <url>http://localhost:8081/artifactory/myrepo</url>
     </snapshotRepository>
+	 <server>
+      <id>snapshots</id>
+      <username>admin</username>
+      <password>Passer@123**</password>
+    </server>
 </distributionManagement>
 	
 
